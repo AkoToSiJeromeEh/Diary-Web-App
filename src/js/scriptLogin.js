@@ -17,9 +17,7 @@ const inputError = (fields , error) => {
 const validateInputs = (e) => {
 
 	e.preventDefault()
-
-	if(inputUsername.value == '') inputError(emailError , 'Please Enter Username ! Required...')
-	if(inputPassword.value == '') inputError(passwordError , 'Please Enter Password ! Required...')
+	if(inputUsername.value == '' && inputPassword.value == '') inputError(emailError , 'Please Enter Username ! Required...')
 	
 }
 formLoginContainer.addEventListener('submit' , validateInputs)

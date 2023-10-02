@@ -3,9 +3,9 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "landing-pattern": "url('./public/landing-bg.jpg')",
-        "login-pattern": "url('./public/login-bg.jpg')",
-        "pages-pattern": "url('./public/bg-5.jpg')",
+        "landing-pattern": "url('../../public/landing-bg.jpg')",
+        "login-pattern": "url('../../public/login-bg.jpg')",
+        "pages-pattern": "url('../../public/bg-5.jpg')",
       },
       backgroundColor: {
         'black-hsl': 'rgba(0, 0, 0, 0.47)'

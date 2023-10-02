@@ -1,19 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is a website about our Dairy.">
-    <meta name="keywords" content="Dairy, Journal, Shessh">
-    <title>TwoHeartsMemoir | Login</title>
-    <link rel="shortcut icon" href="../icons/allentry2.png" type="image/x-icon">
-    <link rel="stylesheet" href="../style/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
+    <?php 
+    include('../static/header.php')
+    ?>
 	<section class="bg-login-pattern min-h-screen bg-cover bg-center bg-no-repeat  text-white grid grid-cols-1 lg:bg-none lg-fixed lg:bg-black overflow-hidden lg:grid-cols-2" >
         <div class=" w-[50vw] hidden lg:block relative">
-            <img class="h-full rotate-[16.516deg] scale-[1.1] origin-top-right" src="../images/login-bg.jpg" alt="">
+            <img class="h-full rotate-[16.516deg] scale-[1.1] origin-top-right" src="../../public/login-bg.jpg" alt="">
         </div>
        <div class="m-0 flex flex-col gap-5 h-[30rem] justify-around md:justify-start md:gap-8 lg:gap-5 lg:justify-around p-8 md:h-full md:m-10 lg:m-5  ">
         <div>
@@ -36,7 +26,7 @@
                 <p id="passErr"></p>
             </div>
             <button class="bg-black-hsl rounded-sm h-[2.5rem]  md:bg-primary-darkviolet ">
-                <a href="../pages/home.html">Login</a>
+                <a href="../pages/home.php">Login</a>
             </button>
         </form>
         <div class="self-center">

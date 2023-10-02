@@ -5,31 +5,31 @@
 const musicAlbum = [
   {
     id: 1,
-    img: "../images/artworks-000016783437-9xp37m-t500x500.jpg",
+    img: "../assets/images/artworks-000016783437-9xp37m-t500x500.jpg",
     title: "Sparks",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum justo eget libero malesuada.",
-    music: "../music/@coldplay  - Sparks (Lyrics).mp3",
+    music: "../assets/music/@coldplay  - Sparks (Lyrics).mp3",
     artist: "Cold Play",
     linear: "linear-gradient(#9d5907, rgba(10, 10, 10, 0.5))",
   },
   {
     id: 2,
-    img: "../images/Doja_Cat_-_Paint_the_Town_Red.png",
+    img: "../assets/images/Doja_Cat_-_Paint_the_Town_Red.png",
     title: "Paint the Town Red",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum justo eget libero malesuada.",
-    music: "../music/Doja Cat - Paint The Town Red (Official Video).mp3",
+    music: "../assets/music/Doja Cat - Paint The Town Red (Official Video).mp3",
     artist: "Doja Cat",
     linear: "linear-gradient(rgba(10, 10, 10, 5),#9C0A1E)",
   },
   {
     id: 3,
-    img: "../images/music-image-1.jpg",
+    img: "../assets/images/music-image-1.jpg",
     title: "Here with me",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum justo eget libero malesuada.",
-    music: "../music/d4vd - Here With Me _Official Music Video_.mp3",
+    music: "../assets/music/d4vd - Here With Me _Official Music Video_.mp3",
     artist: "d4vd",
     linear: " linear-gradient(#F0675D, rgba(10, 10, 10, 5))",
   },

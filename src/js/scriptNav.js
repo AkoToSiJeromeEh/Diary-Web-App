@@ -7,7 +7,7 @@ const navLinksOrigStyle = window.getComputedStyle(navLinks).display;
 
 
 let isClick = true;
-const changeIcon = '<img width="25px" src="../icons/navbar/ico-xmark.png"></img>';
+const changeIcon = '<img width="25px" src="../assets/icons/navbar/ico-xmark.png"></img>';
 const toggleNavlinks = () => {
 
 	const animationClass = isClick ? 'animate__fadeInLeft' : 'animate__jello';
