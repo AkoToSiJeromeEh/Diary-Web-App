@@ -1,0 +1,180 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+  
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+
+	margin: 0;
+	padding: 0;
+}
+h1 {
+
+	font-family: 'Comfortaa', cursive;
+	font-weight : 600;
+}
+p {
+
+	font-family: 'Quicksand', sans-serif;
+	font-weight : 300;
+}
+label {
+
+	font-family : 'Quicksand', sans-serif;
+	font-weight : 400;
+}
+button {
+
+	 font-family : 'Comfortaa', sans-serif;
+	 font-weight : 600;
+	 transition: all 0.7s ease-in-out;
+}
+small {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 700;
+}
+footer p {
+	font-family : 'Comfortaa', sans-serif;
+	font-weight : 600;
+}
+a{
+	font-family: 'Quicksand', sans-serif;
+}
+.active {
+	background-color: #ADBEFC;
+	border-radius: 0.3rem;
+	padding : 0.5rem;
+	font-weight : 700;
+	color : #FFFFFF;
+}
+.h1-home,.p-home , .journal-p {
+
+	font-family: 'Satisfy', cursive ;
+}
+img , span{
+
+	transition: all 0.5s ease-in-out;
+}
+
+#music-list-container {
+	background: linear-gradient(#a86411, rgba(10, 10, 10, 0.5)), url('../images/artworks-000016783437-9xp37m-t500x500.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.img-album{
+
+	box-shadow : 0px 2px 20px rgb(0, 0, 0);
+}
+.profile-cont {
+	box-shadow : 7px -7px 28px 3px #D4ADFC;
+}
+.profile-other-interest{
+	box-shadow: -7px 7px 28px 3px #D4ADFC;
+}
+
+.btn-toggle {
+	color: rgb(114, 2, 159);
+	position: absolute;
+	transform: rotate(90deg);
+	bottom: -12px;
+	padding: 1rem;
+	display: flex;
+	align-self: center;
+	justify-content: center;
+	width: 100%;
+}
+.btn-toggle button {
+
+	padding: 0.9rem 1rem 0.9rem 1rem;
+	background-color: rgb(255, 255, 255);
+	border-radius: 50px;
+	box-shadow: 0.1rem 0.1rem 1.2rem rgb(233, 182, 255);
+}
+.fa-plus{
+
+	background-color: rgb(104, 0, 149);
+	padding: 0.8rem;
+	color: white;
+	border-radius: 0.2rem;
+}
+input{
+	width: 100%;
+	outline: none;
+	padding: 0.2rem;
+	border-bottom: 0.2rem solid rgb(183, 165, 187);
+}
+input::placeholder {
+	color: rgb(114, 2, 159);
+	font-size: 1.2rem;
+	font-family : 'Comfortaa', sans-serif;
+	font-weight: bolder;
+
+}
+textarea {
+
+	resize: none;
+	padding: 0.4rem;
+	overflow-y:scroll;
+	border: 0.3rem solid rgb(183, 165, 187);
+	outline: none;
+	padding: 1rem;
+	border-radius:0.2rem;
+	word-spacing: 0.1rem;
+	padding-right: 20px;
+	font-family: 'Quicksand', sans-serif;
+}
+
+textarea::placeholder {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1.5rem;
+	color: black;
+}
+::-webkit-scrollbar {
+	width: 0.8rem;
+  }
+
+  ::-webkit-scrollbar-track {
+	background: rgb(183, 165, 187);
+  }
+
+  ::-webkit-scrollbar-thumb {
+	background: #ffffff;
+  }
+#newEntryCont{
+	background-color: white;
+}
+.other-interest div{
+	transition: all 0.5s ease-in-out;
+}
+.other-interest div:hover {
+	background: white;
+	color: violet;
+	box-shadow: 0rem 0.2rem 2rem rgb(89, 0, 89);
+	cursor: pointer;
+}
+.other-interest div:hover span{
+	background-color: white;
+	font-weight: 600;
+	color: black;
+	border: 0.2rem solid violet;
+	top: -2rem;
+}
+button:hover  {
+
+	background: white;
+	color: violet;
+	box-shadow: 0rem 0.2rem 2rem rgb(89, 0, 89);
+}
+.profile-img img:hover {
+
+	transform: scale(2);
+	border : 0.1rem solid rgb(255, 179, 255);
+}
+/* Landing Page */

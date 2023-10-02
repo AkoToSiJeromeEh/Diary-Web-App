@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TwoHeartsMemoir | New Entry</title>
+
+    <link
+      rel="shortcut icon"
+      href="../icons/newentry3.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../style/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section
+      class="bg-pages-pattern bg-no-repeat bg-cover bg-center min-h-screen flex flex-col gap-5"
+    >
+      <div>
+        <nav
+          class="bg-[#ffffff] p-6 flex flex-row items-center justify-between"
+        >
+          <div class="nav-toggle z-20">
+            <button id="nav-toggler">
+              <img width="40px" src="../icons/navbar/ico-menu.png" alt="" />
+            </button>
+          </div>
+          <div
+            id="nav-links"
+            class="nav-links text-primary-darkviolet absolute bg-accent-white left-0 top-0 right-0 md:right-auto bottom-0 p-5 z-10 rounded-e-md hidden"
+          >
+            <ul class="text-[1.3rem] flex flex-col gap-3 m-12 mt-16">
+              <li class="active">
+                <img
+                  class="inline"
+                  width="50px"
+                  src="../icons/navlinks/dashboard.png"
+                  alt=""
+                /><a href="" class="ms-2">Dashboard</a>
+              </li>
+              <li>
+                <img
+                  class="inline"
+                  width="40px"
+                  src="../icons/navlinks/newentry3.png"
+                  alt=""
+                />
+                <a href="" class="ms-2">New Entry</a>
+              </li>
+              <li>
+                <img
+                  class="inline"
+                  width="40px"
+                  src="../icons/navlinks/gallery.png"
+                  alt=""
+                />
+                <a href="" class="ms-2">Gallery</a>
+              </li>
+              <li>
+                <img
+                  class="inline"
+                  width="40px"
+                  src="../icons/navlinks/allentry2.png"
+                  alt=""
+                />
+                <a href="" class="ms-2">All Entries</a>
+              </li>
+              <li>
+                <img
+                  class="inline"
+                  width="40px"
+                  src="../icons/navlinks/profile.png"
+                  alt=""
+                />
+                <a href="" class="ms-2">Profile</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-title">
+            <h1 class="text-primary-darkviolet text-[1rem] md:text-2xl">
+              TwoHeartsMemoir
+            </h1>
+          </div>
+          <div class="nav-profile">
+            <img width="40px" src="../icons/navbar/icon-cat.png" alt="" />
+          </div>
+        </nav>
+      </div>
+
+      <div
+        class="p-5 flex flex-col items-start md:items-center justify-center lg:flex-row gap-5"
+      >
+        <form
+          class="profile-other-interest p-5 rounded-[20px] flex flex-col gap-8 bg-accent-white items-start w-full lg:w-[40rem] lg:h-[40rem] md:h-full overflow-hidden"
+        >
+          <div class="flex flex-row gap-2 justify-between w-full">
+            <input id="title-input" type="text" placeholder="Enter Title" />
+            <button type="submit" class="fa-solid fa-plus"></button>
+          </div>
+          <div
+            class="flex flex-col small:flex-row gap-2 justify-between w-full"
+          >
+            <input
+              id="category-input"
+              type="text"
+              placeholder="Enter Category"
+            />
+            <input id="date-input" type="text" placeholder="Enter Date" />
+          </div>
+          <h1 class="text-lg  text-primary-darkviolet font-bold">Choose Output Colors</h1>
+          <div class="flex flex-row gap-4 w-full items-start flex-wrap color-picker">
+            <div class="flex flex-row flex-wrap gap-2 items-center">
+               
+                <h1 class="text-lg  text-primary-darkviolet"> Text Color</h1>
+                <input id="text-picker"  type="color" class="fa-solid fa-fill-drip w-28 p-5 rounded-md text-secondary-lightviolet " >
+            </div>
+            <div class="flex flex-row flex-wrap gap-2 items-center">
+               
+              <h1 class="text-lg font- text-primary-darkviolet"> Bg Color</h1>
+              <input id="bg-picker"  type="color" class="fa-solid fa-fill-drip w-28 p-5 rounded-md text-secondary-lightviolet " >
+          </div>
+          </div>
+          <div class="grid grid-cols-1 w-full lg:w-[90%] h-[32rem]">
+            <textarea
+              id="textarea-input"
+              class="w-full"
+              placeholder="Start writing..."
+            ></textarea>
+          </div>
+        </form>
+
+        <div
+          id="newEntryCont"
+          class="flex flex-col items-center gap-6 w-full lg:w-[30rem] z-30 static lg:relative lg:-left-[5rem] profile-cont  p-5 rounded-[20px] lg:h-[20rem] overflow-y-auto "
+        >
+          <div class="flex flex-col gap-4 m-5">
+            <div
+              class="flex flex-col small:flex-row w-full items-start flex-wrap gap-3"
+            >
+              <div class="flex-1">
+                <h1
+                  class="text-primary-darkviolet text-lg font-bold"
+                  id="title-text"
+                >
+                  Our First Meet
+                </h1>
+                <p id="date-text" class="font-normal">Aug 22 2022</p>
+              </div>
+              <div class="w-full small:w-fit">
+                <span
+                  id="category-text"
+                  class="bg-primary-darkviolet px-4 py-1 text-sm text-white rounded-3xl w-full small:w-fit font-bold"
+                >
+                  Relationship
+                </span>
+              </div>
+            </div>
+            <div>
+              <p id="description-text" class="break-all overflow-visible font-normal">
+                <span >
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Aliquam, quam, ipsam nemo id corrupti inventore nisi ut eveniet
+                repudiandae, saepe blanditiis assumenda sequi quas animi numquam
+                quia repellat voluptatem similique!
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+    <script src="../js/scriptNewentry.js"></script>
+    <script src="../js/scriptNav.js"></script>
+  </body>
+</html>
