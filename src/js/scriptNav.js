@@ -28,3 +28,5 @@ const toggleNavlinks = () => {
 }
 
 btnToggler.addEventListener('click', toggleNavlinks);
+
+

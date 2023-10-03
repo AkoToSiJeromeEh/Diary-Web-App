@@ -1,4 +1,5 @@
 <?php
+ session_start();
  include('../static/header.php')
 ?>
     <section
@@ -18,7 +19,7 @@
         >
           <div class="flex flex-row gap-2 justify-between w-full">
             <input id="title-input" type="text" placeholder="Enter Title" />
-            <button type="submit" class="fa-solid fa-plus"></button>
+            <button id="btn-submit" type="submit" class="fa-solid fa-plus"></button>
           </div>
           <div
             class="flex flex-col small:flex-row gap-2 justify-between w-full"
@@ -43,12 +44,20 @@
               <input id="bg-picker"  type="color" class="fa-solid fa-fill-drip w-28 p-5 rounded-md text-secondary-lightviolet " >
           </div>
           </div>
-          <div class="grid grid-cols-1 w-full lg:w-[90%] h-[32rem]">
-            <textarea
+          <div class="grid grid-cols-1 w-full lg:w-[90%] h-[32rem] relative">
+           <div>
+           <textarea
+           class="h-full w-full" 
               id="textarea-input"
               class="w-full"
               placeholder="Start writing..."
             ></textarea>
+           </div>
+           <div class="absolute   right-[20px] bottom-0 m-5 p-2  rounded-full text-primary-darkviolet border-2 border-secondary-lightviolet bg-slate-50 font-extrabold " id="count-container">
+            <p class="text-[1rem] font-extrabold" >
+              <span id="start-count">0</span> / <span id="max-count">0</span>
+            </p>
+          </div>
           </div>
         </form>
 

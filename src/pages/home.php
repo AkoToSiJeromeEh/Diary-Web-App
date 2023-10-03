@@ -1,15 +1,16 @@
 <?php
+ include('../php/checkUser.php');
  include('../static/header.php')
 ?>
     <section
-      class="home-section bg-pages-pattern bg-no-repeat bg-cover bg-center min-h-screen relative flex flex-col gap-5 scroll-m-0 overflow-hidden"
+      class="home-section bg-pages-pattern bg-no-repeat bg-cover bg-center min-h-screen relative flex flex-col gap-5 scroll-m-0 overflow-hidden z-0 "
     >
       <div>
        <?php
         include('../static/navbar.php');
        ?> 
       </div>
-      <div class="flex flex-col lg:flex-row  items-center justify-center relative  ">
+      <div class="flex flex-col lg:flex-row  items-center justify-center relative z-0 ">
 			<div class="bg-[#ffffff3c] p-6 m-10 border-[#6e6da7] border-8 flex flex-col  items-center justify-center text-center gap-5 rounded-se-xl h-[19rem] text-black w-[90%] md:w-fit  ">
         <img width="50px" src="../icons/pin.png" class=" absolute top-4 m-auto " alt="">
 				<h1 class="text-[5vw] sm:text-3xl h1-home md:text-4xl text-primary-darkviolet ">
@@ -23,7 +24,11 @@
          <img class=" w-[20rem]  " src="../assets/images/book 1.png" alt="">
          <div class="flex flex-col items-center justify-center w-fit text-center absolute bottom-5 p-3 ms-[5.5rem]   " >
           <h1 class="text-primary-darkviolet">
-            Ysje Journal
+            <!-- Check if its exists -->
+           <?php
+              include('../php/renderUser.php')
+           ?>
+            Journal
           </h1>
            <p class="w-40 font-normal">
             “Aim for the moon. If you miss, you may hit a star”

@@ -8,25 +8,33 @@
        <div class="m-0 flex flex-col gap-5 h-[30rem] justify-around md:justify-start md:gap-8 lg:gap-5 lg:justify-around p-8 md:h-full md:m-10 lg:m-5  ">
         <div>
             <p class="font-light mb-2 text-[4vw]  md:text-2xl lg:text-[1.4rem]">
-                Welcome <span class="font-bold text-secondary-lightviolet text-[4vw] md:text-2xl lg:text-[1.4rem]">Darling Ysje</span>
+                Welcome <span class="font-bold text-secondary-lightviolet text-[4vw] md:text-2xl lg:text-[1.4rem]">Two Hearts Memoir</span>
             </p>
             <h1 class="text-[4vw] md:text-2xl tracking-wide lg:text-[1.4rem]">
                 Login to your account
             </h1>
         </div>
-        <form action="../php/login-excute.php" class="flex flex-col gap-6 " method="post" id="form-login">
+        <form action="../php/login-excute.php" class="flex flex-col gap-6 " method="POST" id="form-login">
             <div class="flex flex-col gap-3">
-                <label for="">Email</label>
-                <input id="input-username" class="rounded-sm h-[2.5rem] text-black" type="email" name="username">
+                <label for="">Name</label>
+                <input id="input-username" class="rounded-sm h-[2.5rem] text-black" type="text" name="Username">
                 <p id="emailErr"></p>
             </div>
             <div class="flex flex-col gap-3">
                 <label for="">Password</label>
-                <input id="input-password" class="rounded-sm h-[2.5rem] text-black" type="password" name="password">
+                <input id="input-password" class="rounded-sm h-[2.5rem] text-black" type="password" name="Password">
                 <p id="passErr"></p>
             </div>
-            <button class="bg-black-hsl rounded-sm h-[2.5rem]  md:bg-primary-darkviolet ">
-                <a href="../pages/home.php">Login</a>
+            <div class="text-center text-red-600">
+            <?php
+                if(isset($_GET['error'])) { ?>
+
+                     <p class=" font-semibold" style="color:red"><?php echo $_GET['error']; ?></p>
+                     <?php unset($_SESSION['errorMessage']);
+                     } ?>
+            </div>
+            <button type="submit" class="bg-black-hsl rounded-sm h-[2.5rem]  md:bg-primary-darkviolet ">
+                Login
             </button>
         </form>
         <div class="self-center">

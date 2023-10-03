@@ -1,4 +1,5 @@
 <?php 
+    include('../php/checkUser.php');
     include('../static/header.php')
     ?>
     <section
@@ -9,11 +10,13 @@
         include('../static/navbar.php');
        ?>
       </div>
-      <div class="  p-5 flex flex-col items-start md:items-center justify-center md:flex-row gap-5 ">
-        <div class="flex flex-col items-center   gap-6  bg-accent-white rounded-[20px] profile-cont   w-full lg:w-[30rem]  static lg:relative lg:-right-10">
-          <div class="mt-5 text-center profile-img">
+      <div class="  p-5 flex flex-col items-start md:items-center justify-center md:flex-row gap-5  ">
+        <div class="flex flex-col items-center   gap-6  bg-accent-white rounded-[20px] profile-cont   w-full lg:w-[30rem]  static lg:relative lg:-right-10 ">
+          <div class="mt-5 text-center profile-img " >
             <img class="w-[150px] h-[150px] rounded-full" src="../assets/images/Couple-image.jpg" alt="" />
-          <h1 class="text-2xl text-primary-darkviolet font-extrabold my-2">Ysje</h1>
+          <h1 class="text-2xl text-primary-darkviolet font-extrabold my-2"><?php 
+            include('../php/renderUser.php');
+            ?> </h1>
           <p class="font-semibold text-lg">Jeje | Yssa</p>
           </div>
 

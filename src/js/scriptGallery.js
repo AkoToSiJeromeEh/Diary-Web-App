@@ -71,15 +71,25 @@ let trackTime = 0;
 const resetTrack = () => (trackTime = 0);
 
 const renderMusicArist = () => {
-  titleMusic.innerHTML = musicAlbum[currentmusicIndex].title;
-  artistMusic.innerHTML = musicAlbum[currentmusicIndex].artist;
-  renderPlayingMusic.innerHTML = musicAlbum[currentmusicIndex].title;
-  renderPlayingArtist.innerHTML = musicAlbum[currentmusicIndex].artist;
-  imageCover.src = musicAlbum[currentmusicIndex].img;
-  renderPlayingImage.src = musicAlbum[currentmusicIndex].img;
-  musicDescription.innerHTML = musicAlbum[currentmusicIndex].description;
-  musicContainer.style.background = `${musicAlbum[currentmusicIndex].linear}, url('${musicAlbum[currentmusicIndex].img}')`;
+  const currentMusic = musicAlbum[currentmusicIndex];
+  const {
+    title,
+    artist,
+    img,
+    description,
+    linear,
+  } = currentMusic;
+
+  titleMusic.innerHTML = title;
+  artistMusic.innerHTML = artist;
+  renderPlayingMusic.innerHTML = title;
+  renderPlayingArtist.innerHTML = artist;
+  imageCover.src = img;
+  renderPlayingImage.src = img;
+  musicDescription.innerHTML = description;
+  musicContainer.style.cssText = `background: ${linear}, url('${img}')`;
 };
+
 
 const nextQueue = () => {
   const nextIndex = (currentmusicIndex + 1) % musicAlbum.length; 

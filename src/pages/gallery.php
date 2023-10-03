@@ -1,5 +1,6 @@
 <?php
- include('../static/header.php')
+include('../php/checkUser.php');
+ include('../static/header.php');
 ?>
     <section
       class="home-section bg-pages-pattern bg-no-repeat bg-cover bg-center min-h-screen relative flex flex-col gap-5 scroll-m-0 overflow-hidden"
@@ -16,7 +17,9 @@
             <h1 class="font-extrabold text-lg  md:text-2xl text-primary-darkviolet">
               Good morning
             </h1>
-            <p class="font-extrabold">Ysje</p>
+            <p class="font-extrabold"><?php 
+              include('../php/renderUser.php');
+            ?> </p>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-3 gap-y-3">
               <div class="bg-[#4514583c] p-0 flex flex-row gap-3 items-center rounded-sm">

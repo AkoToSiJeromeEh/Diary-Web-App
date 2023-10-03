@@ -7,7 +7,8 @@
 	$TwoHeartsMemoirDB_Pass = '';
 	$TwoHeartsMemoirDB_Name = 'twoheartsmemoir';
 
-	$createConnection = mysqli_connect($TwoHeartsMemoirDB_Host , $TwoHeartsMemoirDB_Name , $TwoHeartsMemoirDB_Pass , $TwoHeartsMemoirDB_User );
+	$createConnection = mysqli_connect($TwoHeartsMemoirDB_Host, $TwoHeartsMemoirDB_User, $TwoHeartsMemoirDB_Pass, $TwoHeartsMemoirDB_Name);
+
 
 	if(!$createConnection) {
 
