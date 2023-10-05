@@ -41,6 +41,8 @@ const countTrigger = (e) => {
     // Set maxcount to 1000 if the category is "featured"
     else maxValue(255); // Set maxcount to 255 if the category is not "featured"
     
+    count = textareaInput.value.length;
+      
     if (e.inputType === "deleteContentBackward") { // Check if the user input is a Backspace key press
       if (count > 0) { // Check if the count is greater than 0 before executing the code below, which updates the count displayed in the startCount element. We check if it's greater than 0 because we cannot decrement it below 0.
         renderStartedCount(startCount, count); // Render and update the count
@@ -63,8 +65,7 @@ const countTrigger = (e) => {
         errorStyle(countContainer, "black", "2px"); // Remove error styling
         isButtonDisabled(false); // Enable the submit button
       }
-      // Initialize or update the count variable to match the length of the textarea input; this ensures that it reflects the current character count.
-      count = textareaInput.value.length;
+     
     }
     // Update and render the max character count.
     renderStartedCount(maxCount, maxcount);

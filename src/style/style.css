@@ -594,20 +594,8 @@ video {
   top: 1rem;
 }
 
-.top-\[10rem\] {
-  top: 10rem;
-}
-
 .top-\[5\.5rem\] {
   top: 5.5rem;
-}
-
-.top-\[5rem\] {
-  top: 5rem;
-}
-
-.top-\[6rem\] {
-  top: 6rem;
 }
 
 .z-0 {
@@ -620,10 +608,6 @@ video {
 
 .z-50 {
   z-index: 50;
-}
-
-.z-\[100\] {
-  z-index: 100;
 }
 
 .z-\[60\] {
@@ -1498,6 +1482,10 @@ img , span{
   z-index:0;
 }
 
+#modal-cont{
+  z-index: 100;
+}
+
 .btn-toggle {
   color: rgb(114, 2, 159);
   position: absolute;
@@ -1893,10 +1881,6 @@ button:hover  {
     width: fit-content;
   }
 
-  .md\:w-full {
-    width: 100%;
-  }
-
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2007,14 +1991,6 @@ button:hover  {
     right: -2.5rem;
   }
 
-  .lg\:left-0 {
-    left: 0px;
-  }
-
-  .lg\:right-0 {
-    right: 0px;
-  }
-
   .lg\:order-none {
     order: 0;
   }
@@ -2031,10 +2007,6 @@ button:hover  {
     margin: 1.25rem;
   }
 
-  .lg\:m-auto {
-    margin: auto;
-  }
-
   .lg\:block {
     display: block;
   }
@@ -2045,10 +2017,6 @@ button:hover  {
 
   .lg\:h-\[20rem\] {
     height: 20rem;
-  }
-
-  .lg\:h-\[30rem\] {
-    height: 30rem;
   }
 
   .lg\:h-\[40rem\] {
@@ -2073,10 +2041,6 @@ button:hover  {
 
   .lg\:w-\[40rem\] {
     width: 40rem;
-  }
-
-  .lg\:w-\[50rem\] {
-    width: 50rem;
   }
 
   .lg\:w-\[90\%\] {
@@ -2105,10 +2069,6 @@ button:hover  {
 
   .lg\:gap-5 {
     gap: 1.25rem;
-  }
-
-  .lg\:rounded-\[20px\] {
-    border-radius: 20px;
   }
 
   .lg\:bg-black {

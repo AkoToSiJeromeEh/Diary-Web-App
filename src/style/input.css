@@ -81,7 +81,9 @@ img , span{
 	box-shadow: -7px 7px 28px 3px #D4ADFC;
 	z-index:0;
 }
-
+#modal-cont{
+	z-index: 100;
+}
 .btn-toggle {
 	color: rgb(114, 2, 159);
 	position: absolute;
