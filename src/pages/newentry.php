@@ -15,33 +15,39 @@
         class="p-5 flex flex-col items-start md:items-center justify-center lg:flex-row gap-5"
       >
         <form
-          class="profile-other-interest p-5 rounded-[20px] flex flex-col gap-8 bg-accent-white items-start w-full lg:w-[40rem] lg:h-[40rem] md:h-full overflow-hidden"
+          class="profile-other-interest p-5 rounded-[20px] flex flex-col gap-8 bg-accent-white items-start w-full lg:w-[40rem] lg:h-[40rem] md:h-full overflow-hidden" action="../php/entry-insert.php" method="post"
         >
           <div class="flex flex-row gap-2 justify-between w-full">
-            <input id="title-input" type="text" placeholder="Enter Title" />
+            <input id="title-input" name="title-input" type="text" placeholder="Enter Title" />
             <button id="btn-submit" type="submit" class="fa-solid fa-plus"></button>
           </div>
           <div
             class="flex flex-col small:flex-row gap-2 justify-between w-full"
           >
-            <input
-              id="category-input"
-              type="text"
-              placeholder="Enter Category"
-            />
-            <input id="date-input" type="text" placeholder="Enter Date" />
+            <select name="category-input" id="category-input">
+              <option disabled selected value="">Select Category</option>
+              <option value="Relationship">Relationship</option>
+              <option value="Bonding">Bonding</option>
+              <option value="With Family">With Family</option>
+              <option value="Anniversary">Anniversary</option>
+              <option value="Achievement">Achievement</option>
+              <option value="Featured">Featured</option>
+              <option value="Gallery">Gallery</option>
+              <option value="Achievement">Other</option>
+            </select>
+            <input id="date-input" name="date-input" type="text" placeholder="Enter Date" />
           </div>
           <h1 class="text-lg  text-primary-darkviolet font-bold">Choose Output Colors</h1>
           <div class="flex flex-row gap-4 w-full items-start flex-wrap color-picker">
             <div class="flex flex-row flex-wrap gap-2 items-center">
                
                 <h1 class="text-lg  text-primary-darkviolet"> Text Color</h1>
-                <input id="text-picker"  type="color" class="fa-solid fa-fill-drip w-28 p-5 rounded-md text-secondary-lightviolet " >
+                <input id="text-picker" name="textcolor-input"  type="color" class="fa-solid fa-fill-drip w-28 p-5 rounded-md text-secondary-lightviolet " >
             </div>
             <div class="flex flex-row flex-wrap gap-2 items-center">
                
               <h1 class="text-lg font- text-primary-darkviolet"> Bg Color</h1>
-              <input id="bg-picker"  type="color" class="fa-solid fa-fill-drip w-28 p-5 rounded-md text-secondary-lightviolet " >
+              <input id="bg-picker" name="bgcolor-input" type="color" class="fa-solid fa-fill-drip w-28 p-5 rounded-md text-secondary-lightviolet " >
           </div>
           </div>
           <div class="grid grid-cols-1 w-full lg:w-[90%] h-[32rem] relative">
@@ -49,6 +55,7 @@
            <textarea
            class="h-full w-full" 
               id="textarea-input"
+              name="textarea-input"
               class="w-full"
               placeholder="Start writing..."
             ></textarea>

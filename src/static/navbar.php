@@ -4,7 +4,7 @@
       <img width="40px" src="../assets/icons/navbar/ico-menu.png" alt="" />
     </button>
   </div>
-  <div id="nav-links" class="nav-links text-primary-darkviolet absolute bg-accent-white left-0 top-0 right-0 md:right-auto bottom-0 p-5 z-50 rounded-e-md hidden ">
+  <div id="nav-links" class="nav-links text-primary-darkviolet absolute bg-accent-white left-0 top-0 right-0 md:right-auto bottom-0 p-5 z-50 rounded-e-md hidden">
     <ul class="text-[1.3rem] flex flex-col gap-3 m-12 mt-16">
       <li class="nav-item">
         <img class="inline" width="50px" src="../assets/icons/navlinks/dashboard.png" alt="" /><a href="../pages/dashboard.php" class="ms-2">Dashboard</a>

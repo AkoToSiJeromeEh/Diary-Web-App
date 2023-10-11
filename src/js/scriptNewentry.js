@@ -91,6 +91,9 @@ categoryInput.addEventListener("change", getInputValue);
 dateInput.addEventListener("change", getInputValue);
 textareaInput.addEventListener("change", getInputValue);
 
+
+
+
 // Initialize the color picker
 
 const textColorPicker = document.getElementById("text-picker");
@@ -107,3 +110,4 @@ const initColorPick = () => {
 };
 textColorPicker.addEventListener("input", initColorPick);
 bgColorPicker.addEventListener("input", initColorPick);
+
