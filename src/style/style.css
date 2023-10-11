@@ -732,6 +732,10 @@ video {
   display: flex;
 }
 
+.table {
+  display: table;
+}
+
 .grid {
   display: grid;
 }
@@ -762,6 +766,10 @@ video {
 
 .h-\[32rem\] {
   height: 32rem;
+}
+
+.h-\[60vh\] {
+  height: 60vh;
 }
 
 .h-\[65vh\] {
@@ -839,6 +847,10 @@ video {
 
 .flex-1 {
   flex: 1 1 0%;
+}
+
+.origin-left {
+  transform-origin: left;
 }
 
 .origin-top-right {
@@ -1389,6 +1401,10 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .backdrop-blur-0 {
   --tw-backdrop-blur: blur(0);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
@@ -1673,6 +1689,11 @@ button:hover  {
   font-size: 2rem;
   color : white;
   text-shadow : 0rem 0.2rem 0.5rem rgb(245, 145, 245);
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 @media (min-width: 500px) {

@@ -244,3 +244,7 @@ button:hover  {
 	text-shadow : 0rem 0.2rem 0.5rem rgb(245, 145, 245);
 
   }
+::-webkit-scrollbar {
+		width: 0;
+		height: 0;
+}
